@@ -41,6 +41,7 @@ endmodule
 
 ```
 Testbench Program
+```
 
 // gedit tb6.v
 
@@ -93,6 +94,7 @@ module tb6;
         #20 $finish;
     end
     endmodule
+```
 
 ## Operation / Truth Table
 
@@ -148,29 +150,14 @@ The 4-bit SIPO Shift Register was realized using Verilog HDL, with the character
 Q(next) = {Q[2:0], sin}
 
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected operation table.
+<img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/d2749c80-0318-4172-9831-c1e45aae2f3e" />
+
 
 ## Output
-<img width="591" height="181" alt="image" src="https://github.com/user-attachments/assets/f27135f4-6a61-4a44-a099-9be11f7cd54b" />
+<img width="1920" height="1080" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/0f6a0c29-1919-4948-bcb1-f2f2723370f0" />
 
-## Viva-Voce Questions
 
-●	What is a shift register, and what are its four basic types (SISO, SIPO, PISO, PIPO)?
 
-●	How does a SIPO shift register differ from a PISO shift register?
-
-●	How many clock pulses are required to fully load a 4-bit SIPO shift register with serial data?
-
-●	How would you modify the design to shift right instead of left?
-
-●	How would you convert this SIPO register into a Serial-In Serial-Out (SISO) register?
-
-●	What is the purpose of the asynchronous reset in this design?
-
-●	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
-
-●	How can a shift register be used to implement a ring counter or Johnson counter?
-
-●	What is the difference between a shift register built from D flip-flops versus one described behaviourally in Verilog, in terms of simulation versus synthesis?
 
 ## Result
 
